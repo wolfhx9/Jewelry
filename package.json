@@ -1,0 +1,24 @@
+{
+  "name": "jewelry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./src/styles/output.css --watch",
+    "final:build": "postcss src/styles/output.css -o public/styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.7",
+    "owl.carousel": "^2.3.4",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4.0.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.0"
+  }
+}

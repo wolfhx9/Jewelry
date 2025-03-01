@@ -1,0 +1,529 @@
+/* ---- Import Tailwind CSS ---- */
+@import "tailwindcss";
+
+/* ---- Global Variables ---- */
+:root {
+    --btn-bg-default: rgba(249, 250, 251, 0.5);
+    --btn-text-default: black;
+    --btn-hover-bg-default: #1c398e;
+    --btn-hover-text-default: #f9fafb;
+    --btn-bg-blue: #1c398e;
+    --btn-text-blue: #f9fafb;
+    --btn-hover-bg-blue: #f9fafb;
+    --btn-hover-text-blue: #1c398e;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Playfair Display SC", serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* ---- Header---- */
+/* ---- Mobile Menu Button ---- */
+.menu-btn{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+.menu-btn-top ,
+.menu-btn-middle ,
+.menu-btn-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.menu-btn-middle {
+    transform: translateY(7px);
+}
+.menu-btn-bottom {
+    transform: translateY(14px);
+}
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+.open .menu-btn-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .menu-btn-middle {
+    display: none;
+}
+.open .menu-btn-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* ---- Hero ---- */
+#Hero {
+    margin-top: 123px;
+    background: url('../images/Baner.webp') no-repeat center top;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+
+/* ---- Products ---- */
+.item {
+    width: auto;
+    padding-bottom: 20px;
+}
+.card {
+    width: 430px; 
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image-container {
+    background-color: #f4f6fa81;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    padding: 50px;
+}
+.image-container img {
+    width: 70%;
+    transition: all 0.4s;
+}
+.card:hover .image-container img {
+    transform: scale(1.2);
+}
+.card:hover i {
+    transform: translateY(-10px);
+}
+.details i {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.details {
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ---- Products-Category ---- */
+#Products-Category .Category_card_small {
+    background-color: #eaeceb5e;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+#Products-Category .Category_card_small img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+#Products-Category .Category_card_small:nth-child(2) img{
+    padding-top: 40px;
+    width: 60%;
+}
+
+#Products-Category .Category_card_big {
+    background-color: #eaeceb5e;
+    width: 600px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+#Products-Category .Category_card_big img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#Products-Category .content {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    align-items: start;
+    justify-content: center;
+    color: #290202;
+    transition: all 0.4s;
+}
+#Products-Category .content h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: monospace;
+}
+#Products-Category .content a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: monospace;
+    border-bottom: 3px solid #290202;
+}
+#Products-Category .Category_card_big:hover .content,
+#Products-Category .Category_card_small:hover .content{
+    transform: translateY(-10px);
+}
+
+/* ---- Best Diamond ---- */
+#Best-Diamond .Best_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Best-Diamond .Best_card img{
+    width: 200px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+#Best-Diamond .Best_card:hover img {
+    transform: scale(1.1);
+}
+
+/* ---- Ellena Rahma ---- */
+#Ellena-Rahma p::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    top: 10px; 
+    left: -50px;
+}
+#Ellena-Rahma h3::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    top: -20px;
+    left: -40px;
+}
+#Ellena-Rahma h3::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    bottom: 20px;
+    right: 440px;
+}
+
+/* ---- EXplore ---- */
+#EXploreion {
+    background: url('../images/EXploreion.webp') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
+    position: relative;
+}
+
+/* ---- Main Button ---- */
+.btn-animated {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: 2px solid #f9fafb;
+    padding: 10px 16px;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+.btn-animated-default {
+    background-color: var(--btn-bg-default);
+    color: var(--btn-text-default);
+}
+.btn-animated-blue {
+    background-color: var(--btn-bg-blue);
+    color: var(--btn-text-blue);
+}
+.btn-animated::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    left: -100%;
+    border-radius: 9px;
+    transition: all 0.7s ease-in-out;
+    z-index: -1;
+}
+.btn-animated-default::before {
+    background-color: var(--btn-hover-bg-default);
+}
+.btn-animated-blue::before {
+    background-color: var(--btn-hover-bg-blue);
+}
+.btn-animated:hover::before {
+    left: 0;
+    scale: 1.5;
+}
+.btn-animated-default:hover {
+    color: var(--btn-hover-text-default);
+}
+.btn-animated-blue:hover {
+    color: var(--btn-hover-text-blue);
+}
+.btn-animated svg {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border: 1px solid #374151;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(90deg);
+}
+.btn-animated-default svg {
+    background-color: transparent;
+}
+.btn-animated-blue svg {
+    background-color: white;
+}
+.btn-animated:hover svg {
+    rotate: -30deg;
+    background-color: var(--btn-hover-text-default);
+    border: none;
+}
+.btn-animated-blue:hover svg {
+    rotate: -30deg;
+    background-color: transparent;
+    border: none;
+}
+
+/* ----- Scroll To Top Button ----- */
+#STB {
+    display: none;
+    padding: 10px 14px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    backdrop-filter: blur(10px);
+    background: #1c398e;
+    box-shadow: 0 0 25px #1c398e;
+}
+#STB:hover {
+  box-shadow: 0 0 5px #1c398e,
+              0 0 25px #1c398e,
+              0 0 50px #1c398e,
+              0 0 100px #1c398e;
+}
+
+
+/* 2xl screens */
+@media (max-width: 1536px) {
+    #Hero {
+        margin-top: 125px;
+        height: 80vh;
+        background-size: cover;
+    }
+    #Ellena-Rahma h3::after {
+        bottom: 20px;
+        right: 300px;
+    }
+}
+
+/* xl screens */
+@media (max-width: 1280px) {
+    #Hero {
+        margin-top: 125px;
+        height: 70vh;
+        background-size: cover;
+    }
+    
+    #Ellena-Rahma h3::before {
+        font-size: 25px;
+    }
+    #Ellena-Rahma h3::after {
+        font-size: 25px;
+        bottom: 20px;
+        right: 450px;
+    }
+}
+
+/* Large screens */
+@media (max-width: 1024px) {
+    #Hero {
+        margin-top: 92px;
+        height: 90vh;
+        background-size: cover;
+    }
+
+    /* ---- Ellena Rahma ---- */
+    #Ellena-Rahma h3::before {
+        font-size: 25px;
+        top: -15px;
+        left: -30px;
+    }
+    #Ellena-Rahma h3::after {
+        font-size: 25px;
+        bottom: 20px;
+        right: 90px;
+    }
+}
+
+/* Medium screens (Tablet Responsive) */
+@media (max-width: 768px) {
+    /* ---- Hero ---- */
+    #Hero {
+        /* margin-top: 90px; */
+        margin-top: 72px;
+        height: 60vh;
+        background-size: cover;
+    }
+
+    /* ---- Products ---- */
+    .card {
+        width: 300px; 
+        height: 390px;
+    }
+    .image-container {
+        height: 70%;
+    }
+    .card:hover .image-container img {
+        transform: scale(1.1);
+    }
+    .details i {
+        font-size: 1.4rem;
+    }
+    .details {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+
+    /* ---- Products-Category ---- */
+    #Products-Category .Category_card_small {
+        width: 355px;
+        height: 260px;
+    }
+    #Products-Category .Category_card_small img{
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #Products-Category .Category_card_small:nth-child(2) img{
+        padding-top: 40px;
+        width: 60%;
+    }
+
+    #Products-Category .Category_card_big {
+        width: 355px;
+        height: 300px;
+    }
+    #Products-Category .Category_card_big img {
+        object-fit: fill;
+    }
+
+
+    #Products-Category .Category_card_small img {
+        padding-top: 30px;
+    }
+
+    #Products-Category .content h3 {
+        font-size: 1.6rem;
+    }
+    #Products-Category .content a {
+        font-size: 1.2rem;
+        border-bottom: 2px solid #290202;
+    }
+
+    /* ---- Best Diamond ---- */
+    #Best-Diamond .Best_card img {
+        width: 170px; 
+    }
+
+    /* ---- Ellena Rahma ---- */
+    #Ellena-Rahma p::after {
+        display: none;
+    }
+    #Ellena-Rahma h3::after {
+        font-size: 25px;
+        bottom: 20px;
+        right: 80px;
+    }
+
+    #Ellena-Rahma h3::before {
+        font-size: 25px;
+        top: -20px;
+        left: -20px;
+    }
+
+    /* ---- Explore ---- */
+    #EXploreion {
+        background: url('../images/EXploreion.webp') no-repeat center center;
+        background-size: cover;
+        /* background-size: contain; */
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    /* ---- Main Button ---- */
+    .btn-animated {
+        gap: 8px;
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .btn-animated svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* sm screens (Mobile Responsive) */
+@media (max-width: 640px) {
+    /* ---- Hero ---- */
+    #Hero {
+        margin-top: 72px;
+        height: 60vh;
+        background-size: cover;
+    }
+
+    /* ---- Ellena Rahma ---- */
+    #Ellena-Rahma h3::after {
+        font-size: 25px;
+        bottom: 20px;
+    }
+
+    /* ---- Explore ---- */
+    #EXploreion {
+        background: url('../images/EXploreion.webp') no-repeat center center;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        height: 45vh;
+    }
+}
