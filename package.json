@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.7",
+    "animate.css": "^4.1.1",
     "owl.carousel": "^2.3.4",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.0.7"

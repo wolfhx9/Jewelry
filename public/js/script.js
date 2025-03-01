@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // Init WOW.js
+    new WOW().init();
+    
     // Close Massage
     $("#close").click(function () {
         $("#Massage").slideUp();

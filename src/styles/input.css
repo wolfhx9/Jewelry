@@ -1,5 +1,7 @@
 /* ---- Import Tailwind CSS ---- */
 @import "tailwindcss";
+/* ---- Import Animate CSS ---- */
+@import 'animate.css';
 
 /* ---- Global Variables ---- */
 :root {
@@ -228,7 +230,7 @@ html {
     font-size: 30px;
     color: rgba(255, 255, 255, 0.5);
     bottom: 20px;
-    right: 440px;
+    right: 0;
 }
 
 /* ---- EXplore ---- */
