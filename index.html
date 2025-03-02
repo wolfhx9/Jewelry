@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!----- META TAGES ----->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Store For Sell Jewelry">
+    <meta name="keywords" content="Web, Store, Jewelry, Sell Jewelry, Buy Jewelry Web Store For Sell Jewelry">
+    <!----- Links ----->
+    <!----- Main css ----->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!----- Font Awesome Cdn ----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----- owl.carousel.min ----->
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <!----- favicon  ----->
+    <link rel="shortcut icon" href="images/Favicon.png" sizes="128px" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/Favicon.png">
+    <title>Jewelry</title>
+    <!-- Preload -->
+    <link rel="preload" href="images/Baner.webp">
+</head>
+<body>
+
+    <!----- Header ----->
+    <header class="font-mono fixed top-0 left-0 w-full z-50 pb-1 shadow-md">
+        <!-- Massage Banner -->
+        <div id="Massage" class="hidden lg:block bg-blue-950 text-white text-center py-1 ">
+            <span>Free Shopping In Palestine 🇵🇸</span>
+            <span id="close" title="Close"><i class="text-gray-400 pl-20 cursor-pointer fa-solid fa-xmark"></i></span>
+        </div>
+    
+        <!-- Navigation Bar -->
+        <nav class="flex items-center justify-between text-xl capitalize px-4 lg:px-14">
+            <!-- Left Items -->
+            <div class="hidden lg:flex lg:order-2 xl:order-0">
+                <ul class="flex space-x-8 xl:space-x-4">
+                    <li><a href="#Rings" class="duration-300 hover:text-blue-900" title="Rings">Rings</a></li>
+                    <li><a href="#Earrings" class="duration-300 hover:text-blue-900" title="Earrings">Earrings</a></li>
+                    <li><a href="#Bracelets" class="duration-300 hover:text-blue-900" title="Bracelets">Bracelets</a></li>
+                    <li><a href="#Neckwear" class="duration-300 hover:text-blue-900" title="Neckwear">Neckwear</a></li>
+                </ul>
+            </div>
+    
+            <!-- Center Logo -->
+            <div>
+                <a href="#Hero" title="Store Logo">
+                    <img src="images/logo.webp" alt="Store Logo" loading="eager" class="w-40 md:w-52">
+                </a>
+            </div>
+    
+            <!-- Right Items -->
+            <div class="hidden xl:flex space-x-4 items-center">
+                <ul class="flex space-x-4">
+                    <li><a href="" class="duration-300 hover:text-blue-900" title="FAQ">FAQ</a></li>
+                    <li><a href="" class="duration-300 hover:text-blue-900" title="Help">Help</a></li>
+                    <li><a href="" class="duration-300 hover:text-blue-900" title="About">About</a></li>
+                </ul>
+    
+                <!-- Search Input & Icons -->
+                <div class="hidden xl:flex space-x-4 items-center">
+                    <div class="relative">
+                        <input type="search" title="search"
+                            class="p-3 pl-10 text-sm border border-blue-900 rounded-lg bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Search" />
+                        <svg class="w-4 h-4 text-gray-500 absolute top-1/2 left-3 transform -translate-y-1/2"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <i class="text-2xl text-blue-900 cursor-pointer duration-300 hover:text-blue-950 fa-solid fa-bag-shopping" title="Shopping"></i>
+                    <i class="text-2xl text-blue-900 cursor-pointer duration-300 hover:text-blue-950 fa-solid fa-user" title="User"></i>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="menu-btn block md:md:order-3 xl:hidden focus:outline-none" aria-label="Menu Button" title="Menu Button">
+                <span class="menu-btn-top"></span>
+                <span class="menu-btn-middle"></span>
+                <span class="menu-btn-bottom"></span>
+            </button>
+        </nav>
+    
+        <!-- Mobile Menu -->        
+        <div id="menu" class="hidden bg-white flex-row items-center justify-between lg:hidden absolute w-full left-0 shadow-lg py-4 text-center">
+            <div class="flex flex-col w-1/2 xl:w-full">
+                <a href="#Rings" class="block py-2 rounded-xl duration-300 hover:bg-gray-200" title="Rings">Rings</a>
+                <a href="#Earrings" class="block py-2 rounded-xl duration-300 hover:bg-gray-200" title="Earrings">Earrings</a>
+                <a href="#Bracelets" class="block py-2 rounded-xl duration-300 hover:bg-gray-200" title="Bracelets">Bracelets</a>
+                <a href="#Neckwear" class="block py-2 rounded-xl duration-300 hover:bg-gray-200" title="Neckwear">Neckwear</a>
+            </div>
+
+            <div class="flex flex-col w-1/2 xl:hidden">
+                <a href="" class="block py-2 rounded-xl duration-300 hover:bg-gray-200" title="FAQ">FAQ</a>
+                <a href="" class="block py-2 rounded-xl duration-300 hover:bg-gray-200" title="Help">Help</a>
+                <a href="" class="block py-2 rounded-xl duration-300 hover:bg-gray-200" title="About">About</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!----- Main Section ----->
+    <main>
+        <!----- Hero Section ----->
+        <section id="Hero" class="h-screen">
+            <div class="container text-center uppercase wow animate__animated animate__backInLeft" data-wow-offset="100">
+                <p class="text-xl lg:text-3xl">
+                    Certified Diamonds
+                </p>
+                <h1 class="text-3xl font-bold py-10 tracking-widest lg:text-5xl lg:font-medium">
+                    Personal Touch Jewelry
+                </h1>
+                <button type="button" class="py-56 btn-animated btn-animated-blue" aria-label="Shop Now" title="Shop Now">
+                    <a href="#" class="text-lg pr-4 font-mono">
+                        Shop Now
+                    </a>
+                    <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                            class="fill-gray-800 group-hover:fill-gray-800"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!----- Products Section ----->
+        <section id="Products" class="wow animate__animated animate__fadeInLeftBig" data-wow-offset="100">
+            <!----- header ----->
+            <div class="px-14 py-8 flex items-center justify-center md:justify-between">
+                <h2 class="text-2xl font-semibold lg:text-4xl md:text-left">
+                    Our Featured Products
+                </h2>
+                <div class=" hidden md:block space-x-2">
+                    <button id="prev" class="rounded-full duration-300 hover:bg-gray-300" aria-label="Prev" title="Prev">
+                        <i class=" px-5 py-5 text-xl fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button id="next" class="rounded-full duration-300 hover:bg-gray-300" aria-label="Next" title="Next">
+                        <i class=" px-5 py-5 text-xl fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+                
+            <div class="px-2 lg:px-4 my-6 owl-carousel">
+                <!----- card 1 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Ring_Eternity.webp" loading="lazy" alt="Ring Eternity" title="Ring Eternity">
+                        </div>
+                        <div class="details">
+                            <p>Ring Eternity <br> <span>$1,200</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 2 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Ring_Dahlia.webp" loading="lazy" alt="Ring Dahlia" title="Ring Dahlia">
+                        </div>
+                        <div class="details">
+                            <p>Ring Dahlia <br> <span>$1,200</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 3 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Pendant_Ume.webp" loading="lazy" alt="Pendant Ume" title="Pendant Ume">
+                        </div>
+                        <div class="details">
+                            <p>Pendant Ume <br> <span>$1,200</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 4 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Ring_Acacia.webp" loading="lazy" alt="Ring Acacia" title="Ring Acacia">
+                        </div>
+                        <div class="details">
+                            <p>Ring Acacia <br> <span>$1,200</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 5 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Diamond-Eternity-Ring-.webp" loading="lazy" alt="Diamond Eternity Ring" title="Diamond Eternity Ring">
+                        </div>
+                        <div class="details">
+                            <p>Ring Acacia <br> <span>$1,000</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 6 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Diamond-Eternity-Ring-With-3-Diamonds.webp" loading="lazy" alt="Diamond Eternity Ring With 3 Diamonds" title="Diamond Eternity Ring With 3 Diamonds">
+                        </div>
+                        <div class="details">
+                            <p>Diamond Eternity Ring With 3 Diamonds <br> <span>$1,700</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 7 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Diamond_Double_Layer_Eternity_Ring.webp" loading="lazy" alt="Diamond Double Layer Eternity Ring" title="Diamond Double Layer Eternity Ring">
+                        </div>
+                        <div class="details">
+                            <p>Diamond Double Layer Eternity Ring <br> <span>$1,200</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 8 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Yellow_Gold_Diamond_Eternity_Ring.webp" loading="lazy" alt="Yellow Gold Diamond Eternity Ring" title="Yellow Gold Diamond Eternity Ring">
+                        </div>
+                        <div class="details">
+                            <p>Yellow Gold Diamond Eternity Ring <br> <span>$1,900</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 9 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Yellow_Gold_Pearl_Pendant.webp" loading="lazy" alt="Yellow Gold Pearl Pendant" title="Yellow Gold Pearl Pendant">
+                        </div>
+                        <div class="details">
+                            <p>Yellow Gold Pearl Pendant <br> <span>$1,520</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!----- card 10 ----->
+                <div class="item">
+                    <div class="card">
+                        <div class="image-container">
+                            <img src="images/Yellow_Gold_Ring.webp" loading="lazy" alt="Yellow Gold Ring" title="Yellow Gold Ring">
+                        </div>
+                        <div class="details">
+                            <p>Yellow Gold Ring <br> <span>$2,000</span></p>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </section>
+
+        <!----- About Us Section ----->
+        <section id="About" class="bg-blue-950 py-10 pl-4 lg:py-10 lg:pl-20 xl:py-20">
+            <!----- continer ----->
+            <div class="text-white flex flex-col justify-start xl:flex-row lg:items-center lg:justify-between">
+                <!----- Text ----->
+                <div class="w-full xl:w-1/2 pb-8 wow animate__animated animate__backInLeft" data-wow-offset="100">
+                    <p class="uppercase text-lg font-light font-mono pb-8 xl:text-2xl">highest standards</p>
+                    <h2 class="lowercase text-2xl lg:text-3xl 2xl:text-4xl">Our products are certified by top laboratories, ensuring our gold mountings meet the highest ethical standards.</h2>
+                </div>
+                <!----- icons ----->
+                <div class="w-full flex flex-col items-center font-mono text-center lg:flex-row xl:w-1/2 wow animate__animated animate__backInRight" data-wow-offset="100">
+                    <!----- Icon 1 ----->
+                    <div class="w-full pb-10 space-y-6 flex flex-col items-center justify-center lg:w-1/3 lg:pb-0">
+                        <img src="images/Ring_icon.webp" loading="lazy" alt="Full-Service Production" title="Full-Service Production" class="w-24 lg:w-32 2xl:w-40">
+                        <p class="text-xl">Full-Service Production</p>
+                    </div>
+                    <!----- Icon 2 ----->
+                    <div class="w-full pb-10 space-y-6 flex flex-col items-center justify-center lg:w-1/3 lg:pb-0">
+                        <img src="images/Three_People_Icon.webp" loading="lazy" alt="Customer-First Approach" title="Customer-First Approach" class="w-24 lg:w-32 2xl:w-40">
+                        <p class="text-xl">Customer-First Approach</p>
+                    </div>
+                    <!----- Icon 3 ----->
+                    <div class="w-full space-y-6 flex flex-col items-center justify-center lg:w-1/3">
+                        <img src="images/European_Qaulity.webp" loading="lazy" alt="European Qaulity" title="European Qaulity" class="w-24 lg:w-32 2xl:w-40">
+                        <p class="text-xl">European Qaulity</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!----- Products Category Section----->
+        <section id="Products-Category">
+            <div class="container mx-auto my-20">
+                <h2 class="text-3xl text-center font-semibold lg:text-4xl 2xl:text-5xl wow animate__animated animate__backInLeft" data-wow-offset="100">
+                    Product Category
+                </h2>
+
+                <!----- Category  ----->
+                <div class="my-10 grid grid-cols-1 items-start justify-self-center gap-6 xl:grid-cols-2">
+                    <!----- Col 1 ----->
+                    <div class="grid gap-6 wow animate__animated animate__backInLeft" data-wow-offset="100">
+                        <!----- Row 1 ----->
+                        <div id="Earrings" class="Category_card_small">
+                            <img src="images/Earrings.webp" loading="lazy" alt="Earrings" title="Earrings">
+                            <!----- contrnt ----->
+                            <div class="content">
+                                <h3>Earrings</h3>
+                                <a href="#">Explore Now</a>
+                            </div>
+                        </div>
+                        <!----- Row 2 ----->
+                        <div id="Rings" class="Category_card_big">
+                            <img src="images/Rings.webp" loading="lazy" alt="Rings" title="Rings">
+                            <!----- contrnt ----->
+                            <div class="content">
+                                <h3>Rings</h3>
+                                <a href="#">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- Col 2 ----->
+                    <div class="grid gap-4 wow animate__animated animate__backInRight" data-wow-offset="100">
+                        <!----- Row 1 ----->
+                        <div id="Neckwear" class="Category_card_big">
+                            <img src="images/Neckwear.webp" loading="lazy" alt="Neckwear" title="Neckwear">
+                            <!----- contrnt ----->
+                            <div class="content">
+                                <h3>Neckwear</h3>
+                                <a href="#">Explore Now</a>
+                            </div>
+                        </div>
+                        <!----- Row 2 ----->
+                        <div id="Bracelets" class="Category_card_small">
+                            <img src="images/Bracelets.webp" loading="lazy" alt="Bracelets" title="Bracelets">
+                            <!----- contrnt ----->
+                            <div class="content">
+                                <h3>Bracelets</h3>
+                                <a href="#">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!----- Best Diamond Section----->
+        <section id="Best-Diamond">
+            <div class="container mx-auto my-20">
+                <h2 class="text-3xl text-center font-semibold lg:text-4xl 2xl:text-5xl wow animate__animated animate__backInLeft" data-wow-offset="100">
+                    Best Diamond That You Loved
+                </h2>
+                <!----- contener ----->
+                <div class="flex flex-col items-end justify-between my-10 lg:flex-row">
+                    <!----- col 1 ----->
+                    <div class="Best_card w-full lg:w-1/4 wow animate__animated animate__backInDown" data-wow-offset="100">
+                        <!----- img ----->
+                        <div>
+                            <img src="images/Solitare Rings.webp" loading="lazy" alt="Solitare Rings" title="Solitare Rings">
+                        </div>
+                        <!----- text ----->
+                        <div>
+                            <p class="capitalize text-2xl font-light font-mono pb-8">Solitare Rings</p>
+                        </div>
+                    </div>
+                    <!----- col 2 ----->
+                    <div class="Best_card w-full lg:w-1/4 wow animate__animated animate__backInUp" data-wow-offset="100">
+                        <!----- img ----->
+                        <div>
+                            <img src="images/Tennis_Bracelets.webp" loading="lazy" alt="Tennis Bracelets" title="Tennis Bracelets">
+                        </div>
+                        <!----- text ----->
+                        <div>
+                            <p class="capitalize text-2xl font-light font-mono pb-8">Tennis Bracelets</p>
+                        </div>
+                    </div>
+                    <!----- col 3 ----->
+                    <div class="Best_card w-full lg:w-1/4 wow animate__animated animate__backInDown" data-wow-offset="100">
+                        <!----- img ----->
+                        <div>
+                            <img src="images/Best_Neckwear.webp" loading="lazy" alt="Neckwear" title="Neckwear">
+                        </div>
+                        <!----- text ----->
+                        <div>
+                            <p class="capitalize text-2xl font-light font-mono pb-8">Neckwear</p>
+                        </div>
+                    </div>
+                    <!----- col 4 ----->
+                    <div class="Best_card w-full lg:w-1/4 wow animate__animated animate__backInUp" data-wow-offset="100">
+                        <!----- img ----->
+                        <div>
+                            <img src="images/Eternity_Rings.webp" loading="lazy" alt="Eternity Rings" title="Eternity Rings">
+                        </div>
+                        <!----- text ----->
+                        <div>
+                            <p class="capitalize text-2xl font-light font-mono pb-8">Eternity Rings</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!----- Timeless Section ----->
+        <section id="Timeless">
+            <!----- flex ----->
+            <div class="flex flex-col-reverse items-center justify-center xl:flex-row xl:justify-between">
+                <!----- text ----->
+                <div class="w-2/3 ml-6 pt-8 lg:w-2/3 lg:ml-16 2xl:ml-32 xl:pt-0 wow animate__animated animate__backInLeft" data-wow-offset="100">
+                    <h3 class="lowercase text-3xl font-medium tracking-widest pb-8 leading-10 lg:text-4xl 2xl:leading-16 2xl:pb-10 2xl:text-5xl">
+                        Timeless Elegance, Antwerp Craftsmanship
+                    </h3>
+                    <p class="font-mono text-xl font-medium pb-4 text-gray-700 2xl:text-2xl 2xl:pb-10">
+                        Elevate your jewelry with Antwerp Mounts. Our exquisite gold settings showcase Belgian craftsmanship at its finest.
+                    </p>
+                    <p class="font-mono text-xl font-medium pb-10 text-gray-700 2xl:text-2xl">
+                        From classic solitaires to intricate designs, we offer premium mountings that perfectly showcase your precious stones.
+                    </p>
+                    <button type="button" class="btn-animated btn-animated-blue" aria-label="Shop Now" title="Shop Now">
+                        <a href="#" class="text-xl pr-4 font-mono">
+                            Shop Now
+                        </a>
+                        <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                                class="fill-gray-800 group-hover:fill-gray-800"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!----- image ----->
+                <div class="w-full lg:w-3/5 wow animate__animated animate__backInRight" data-wow-offset="100">
+                    <img src="images/Timeless.webp" loading="lazy" alt="Timeless" title="Timeless" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <!----- Ellena Rahma Section ----->
+        <section id="Ellena-Rahma">
+            <div class="container bg-blue-950 my-20 mx-auto w-full flex flex-col items-center justify-center xl:flex-row 2xl:w-2/3">
+                <!----- image ----->
+                <div class="w-full flex lg:w-2/4 wow animate__animated animate__backInLeft" data-wow-offset="100">
+                    <img src="images/Ellena_Rahma.webp" loading="lazy" alt="Professional explanation" title="Professional explanation" class="blur-2xl w-full transform scale-x-[-1] object-cover lg:w-4/5">
+                </div>
+                <!----- text ----->
+                <div class="w-full p-8 text-white lg:w-3/4 wow animate__animated animate__backInRight" data-wow-offset="100">
+                        <p class="font-mono text-xl font-bold pb-4 relative lg:pb-10 xl:text-2xl"> Ellena Rahma</p>
+                        <h3 class="lowercase text-3xl font-medium leading-10 pb-10 xl:text-4xl lg:leading-16 relative">
+                            Professional explanation,
+                            Svetlana is a very friendly person,
+                            pleasant to work with, I feel welcome as a customer .
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!----- EXplore Section ----->
+        <section id="EXploreion">
+            <div class="sm:w-1/3 sm:ml-20 w-2/3 ml-3 lg:ml-20 lg:w-2/4 3xl:ml-32 3xl:w-1/3 wow animate__animated animate__backInLeft" data-wow-offset="100">
+                <h3 class="lowercase sm:text-2xl text-xl font-medium pb-2 md:text-3xl xl:text-4xl lg:pb-10 lg:tracking-wide lg:leading-16 2xl:text-5xl">
+                    Explore our stunning gold jewelry collection to find your ideal piece.
+                </h3>
+                
+                <button type="button" class="hidden lg:block btn-animated btn-animated-default" aria-label="Shop Now" title="Shop Now">
+                    <a href="#" class="text-xl pr-4 font-mono">
+                        Shop Now
+                    </a>
+                    <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                            class="fill-gray-800 group-hover:fill-gray-800"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </section>
+
+        <!----- Scroll To Top Button ----->
+        <button id="STB" class="fixed bottom-10 right-10 wow animate__animated animate__backInUp" data-wow-offset="100" aria-label="Scroll To Top" title="Scroll To Top">
+            <i class="text-xl fa-solid fa-angle-up"></i>
+        </button>
+
+    </main>
+
+    <!----- Footer ----->
+    <footer class="px-8 pt-10 bg-gray-50">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <!----- Col 1: Logo & Description ----->
+            <div class="wow animate__animated animate__backInLeft" data-wow-offset="100">
+                <img src="images/logo.webp" loading="lazy" alt="Logo" class="w-40 lg:w-48 mb-4">
+                <p class="text-gray-900">
+                    Antwerp Mounts is a family-run company and a leading
+                    exporter of high-quality polished diamonds and jewellery.
+                </p>
+                <!----- Social Media Icons ----->
+                <div class="flex justify-center lg:justify-start space-x-4 mt-4">
+                    <a href="https://www.facebook.com/profile.php?id=100053743200085" aria-label="facebook" target="_blank" class="text-gray-800 text-4xl duration-300 hover:text-gray-950 transform hover:-translate-y-2"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/mr_wolfm?igsh=YzljYTk1ODg3Zg" aria-label="instagram" target="_blank" class="text-gray-800 text-4xl duration-300 hover:text-gray-950 transform hover:-translate-y-2"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://x.com/One_Pis_pc" aria-label="x" target="_blank" class="text-gray-800 text-4xl duration-300 hover:text-gray-950 transform hover:-translate-y-2"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://github.com/wolfhx9" aria-label="github" target="_blank" class="text-gray-800 text-4xl duration-300 hover:text-gray-950 transform hover:-translate-y-2"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+    
+            <!----- Col 3: Shop & Company & Buyer ----->
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-3 wow animate__animated animate__backInDown" data-wow-offset="100">
+                <!----- Shop ----->
+                <div>
+                    <h3 class="font-semibold text-gray-900 uppercase mb-3">Shop</h3>
+                    <ul class="space-y-2 text-md md:text-lg">
+                        <li><a href="#Rings" class="duration-300 hover:text-blue-900">Rings</a></li>
+                        <li><a href="#Earrings" class="duration-300 hover:text-blue-900">Earrings</a></li>
+                        <li><a href="#Bracelets" class="duration-300 hover:text-blue-900">Bracelets</a></li>
+                        <li><a href="#Neckwear" class="duration-300 hover:text-blue-900">Neckwear</a></li>
+                    </ul>
+                </div>
+                <!----- Company ----->
+                <div>
+                    <h3 class="font-semibold text-gray-900 uppercase mb-3">Company</h3>
+                    <ul class="space-y-2 text-md md:text-lg">
+                        <li><a href="" class="duration-300 hover:text-blue-900">FAQ</a></li>
+                        <li><a href="" class="duration-300 hover:text-blue-900">Testimonial</a></li>
+                        <li><a href="" class="duration-300 hover:text-blue-900">Contact</a></li>
+                        <li><a href="#About" class="duration-300 hover:text-blue-900">About</a></li>
+                    </ul>
+                </div>
+                <!----- Buyer ----->
+                <div>
+                    <h3 class="font font-semibold text-gray-900 uppercase mb-3">Buyer</h3>
+                    <ul class="space-y-2 text-md md:text-lg">
+                        <li><a href="#" class="duration-300 hover:text-blue-900">Payment</a></li>
+                        <li><a href="#" class="duration-300 hover:text-blue-900">Shipping</a></li>
+                        <li><a href="#" class="duration-300 hover:text-blue-900">Returns</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+    
+            <!----- Col 4: Newsletter & Payment ----->
+            <div class="wow animate__animated animate__backInRight" data-wow-offset="100">
+                <h3 class="font-semibold text-gray-800 uppercase mb-3">Newsletter</h3>
+                <div class="flex">
+                    <input type="email" class="p-3 flex-grow border text-lg border-gray-400 rounded-l-md invalid:outline-red-700 valid:outline-green-600 lg:text-xl" placeholder="Enter email">
+                    <button type="button" class="p-3 px-6 text-lg bg-blue-900 text-white rounded-r-md cursor-pointer lg:text-xl" aria-label="go" title="go">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </div>
+                <h3 class="font-semibold text-gray-800 uppercase mt-6 mb-3">We Accept</h3>
+                <div class="flex space-x-2">
+                    <img src="images/visa.svg" loading="lazy" alt="Visa" class="h-12 duration-300 hover:scale-110 lg:h-16">
+                    <img src="images/mastercard.svg" loading="lazy" alt="Mastercard" class="h-12 duration-300 hover:scale-110 lg:h-16">
+                    <img src="images/paypal.svg" loading="lazy" alt="PayPal" class="h-12 duration-300 hover:scale-110 lg:h-16">
+                    <img src="images/Skrill.svg" loading="lazy" alt="Skrill" class="h-12 duration-300 hover:scale-110 lg:h-16">
+                    <img src="images/visa-electron.svg" loading="lazy" alt="Visa Electron" class="h-12 duration-300 hover:scale-110 lg:h-16">
+                </div>
+            </div>
+        </div>
+    
+        <!----- Copyright & Links ----->
+        <div class="mt-10 border-t pt-6 text-gray-600 text-md flex flex-col space-y-4 justify-between md:text-xl lg:text-center xl:flex-row ">
+            <p class="wow animate__animated animate__backInLeft" data-wow-offset="100">programming by youssef aboulkram</p>
+            <p class="wow animate__animated animate__backInDown" data-wow-offset="100">&copy; antwerp mounts 2025. all rights reserved</p>
+            <div class="flex justify-center space-x-6 wow animate__animated animate__backInRight" data-wow-offset="100">
+                <a href="#" class="hover:text-blue-800">privacy policy</a>
+                <a href="#" class="hover:text-blue-800">shipping & returns</a>
+            </div>
+        </div>
+        <div class="mt-10 border-t py-6 text-gray-900 text-xl flex justify-center md:text-2xl">
+            <p class="wow animate__animated animate__lightSpeedInLeft" data-wow-offset="10">
+                Free Palestine 🇵🇸
+            </p>
+            </div>
+        </div>
+    </footer>
+
+    <!----- Scripts ----->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>
