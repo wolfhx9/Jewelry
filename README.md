@@ -29,11 +29,11 @@ This project is a product showcase website featuring a modern design using the *
 ---
 
 ## ✨ Features
-✅ Fast and responsive design for all devices
-✅ Smooth effects and dynamic animations with Tailwind CSS
-✅ Smooth animations
-✅ Clean and easily editable code
-✅ Great user experience with an elegant interface
+- ✅ Fast and responsive design for all devices
+- ✅ Smooth effects and dynamic animations with Tailwind CSS
+- ✅ Smooth animations
+- ✅ Clean and easily editable code
+- ✅ Great user experience with an elegant interface
 
 ---
 
